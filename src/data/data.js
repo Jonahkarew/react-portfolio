@@ -1,8 +1,8 @@
 const data = {
-    "projects": [
+    "project": [
         {
             '_id':57283,
-            'index': 0,
+            'index': 01,
             'image' : '../assets/images/llf-react.PNG',
             'title': 'Long Lost Friends',
             'link': 'https://long-lost-friends.herokuapp.com/',
@@ -11,7 +11,7 @@ const data = {
         },
         {
             '_id':57284,
-            'index': 0,
+            'index': 02,
             'image' : '../assets/images/ScrapeIt.PNG',
             'title': 'Scrape It!',
             'link': 'https://jonahkarew.github.io/project1_master/',
@@ -20,7 +20,7 @@ const data = {
         },
         {
             '_id':57285,
-            'index': 0,
+            'index': 03,
             'image' : '../assets/images/ScrapeIt.PNG',
             'title': 'NoteTaker',
             'link': 'https://jonah-karew-note-taker.herokuapp.com/',
@@ -29,7 +29,7 @@ const data = {
         },
         {
             '_id':57286,
-            'index': 0,
+            'index': 04,
             'image' : '../assets/images/MemoryGame.PNG',
             'title': 'Pokemon Memory Game',
             'link': 'https://jonahkarew.github.io/memory-game/',
@@ -38,7 +38,7 @@ const data = {
         },
         {
             '_id':57287,
-            'index': 0,
+            'index': 05,
             'image' : '../assets/images',
             'title': '',
             'link': '',
@@ -47,7 +47,7 @@ const data = {
         },
         {
             '_id':57288,
-            'index': 0,
+            'index': 06,
             'image' : '../assets/images',
             'title': '',
             'link': '',
@@ -56,3 +56,5 @@ const data = {
         },
     ]
 }
+
+export default data;
