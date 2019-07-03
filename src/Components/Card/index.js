@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 const Card = ({project}) => {
     const {index, image, title, link, repo, description} = project;
     return(
+        
+        
         <div id={`card-${index}`} className = 'card'>
             <img src={image} alt={`Screenshot of ${title}`} />
             <div className='details'> 
@@ -16,6 +18,7 @@ const Card = ({project}) => {
             </div>
 
         </div>
+        
     )
 }
 
