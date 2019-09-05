@@ -8,13 +8,13 @@ const Card = ({project}) => {
         <div id={`card-${index}`} className = 'card'>
             <img src={image} alt={`Screenshot of ${title}`} />
             <div className='details'> 
-            <span className='index'>{index+1}</span>
-            <p className='title'>{title}</p>
-            <ul>
-                <li>{link}</li>
-                <li>{repo}</li>
-                <li>{description}</li>
-            </ul>
+                <span className='index'>{index+1}</span>
+                <p className='title'>{title}</p>
+                <ul className='features'>
+                    <li className='icon-bed'>{link}</li>
+                    <li>{repo}</li>
+                    <li>{description}</li>
+                </ul>
             </div>
 
         </div>

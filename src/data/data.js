@@ -4,16 +4,16 @@ const data = {
     "projects": [
         {
             '_id':57283,
-            'index': 1,
+            'index': 0,
             'image' : require('../assets/images/llf-react.jpg'),
             'title': 'Long Lost Friends',
             'link': 'https://long-lost-friends.herokuapp.com/',
             'repo': 'https://github.com/rishirsud/llf-react',
-            'description': ''
+            'description': 'this is a description'
         },
         {
             '_id':57284,
-            'index': 2,
+            'index': 1,
             'image' : require('../assets/images/ScrapeIt.PNG'),
             'title': 'Scrape It!',
             'link': 'https://jonahkarew.github.io/project1_master/',
@@ -22,7 +22,7 @@ const data = {
         },
         {
             '_id':57285,
-            'index': 3,
+            'index': 2,
             'image' : require('../assets/images/NoteTaker.PNG'),
             'title': 'NoteTaker',
             'link': 'https://jonah-karew-note-taker.herokuapp.com/',
@@ -31,7 +31,7 @@ const data = {
         },
         {
             '_id':57286,
-            'index': 4,
+            'index': 3,
             'image' : require('../assets/images/MemoryGame.PNG'),
             'title': 'Pokemon Memory Game',
             'link': 'https://jonahkarew.github.io/memory-game/',
