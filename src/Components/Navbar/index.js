@@ -15,13 +15,24 @@ function Navbar (){
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                    <div className="nav-item nav-link navButton" 
-                    id="homeButton"><NavLink to="/"> 
-                    Home</NavLink> 
-                    <span className="sr-only">(current)
-                    </span></div>
-                    <div className="nav-item nav-link navButton" id="contactButton"><NavLink to="/contact"> Contact </NavLink></div>
-                    <div className="nav-item nav-link navButton" id="portfolioButton"><NavLink to="/portfolio">Portfolio</NavLink></div>
+                        <div className="nav-item nav-link navButton" id="homeButton">
+                            <NavLink to="/"> 
+                                Home
+                            </NavLink> 
+                            <span className="sr-only">
+                                (current)
+                            </span>
+                        </div>
+                        <div className="nav-item nav-link navButton" id="contactButton">
+                            <NavLink to="/contact"> 
+                                Contact
+                            </NavLink> 
+                        </div>
+                        <div className="nav-item nav-link navButton" id="portfolioButton">
+                            <NavLink to="/portfolio">
+                                Portfolio
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
             </nav>

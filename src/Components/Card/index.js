@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 const Card = ({project}) => {
     const {index, image, title, link, repo, description} = project;
     return(
@@ -8,12 +9,12 @@ const Card = ({project}) => {
         <div id={`card-${index}`} className = 'card'>
             <img src={image} alt={`Screenshot of ${title}`} />
             <div className='details'> 
-                <span className='index'>{index+1}</span>
-                <p className='title'>{title}</p>
+                {/* <span className='index'>{index+1}</span> */}
+                <h2 className='title'>{title}</h2>
                 <ul className='features'>
-                    <li className='icon-bed'>{link}</li>
-                    <li>{repo}</li>
-                    <li>{description}</li>
+                    <li> <a href={link} target="_blank" className='portLink'>Deployed Link</a> </li>
+                    <li><a href={repo} target="_blank" className='portLink'>Github Repository</a> </li>
+                    <li><a href={description} target="_blank" className='portLink'> ReadMe </a></li>
                 </ul>
             </div>
 

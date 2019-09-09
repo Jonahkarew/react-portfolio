@@ -23,6 +23,17 @@
   color: #61dafb;
 }
 
+
+h2{
+  padding: 0.5rem;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
 .cards-slider-wrapper {
   display: flex;
   position: absolute;
@@ -30,7 +41,7 @@
 
 .cards-slider-wrapper .card {
   flex: 1;
-  max-width: 800px;
+  max-width: 880px;
   opacity: 0.7;
   transform: scale(0.8);
   box-shadow: none;
@@ -316,15 +327,15 @@
 
 
 .col {
-  height: 264px;
+  height: 1000px;
   position: relative; 
   max-width: 1000px;
   overflow: hidden;}
 
-  .col:before, .col:after {
+  .col:after {
     content: '';
     display: block;
-    width: 50%;
+    width: 30%;
     height: 120%;
     background: linear-gradient(to right, white 15%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
@@ -339,17 +350,48 @@
 
 .cards-slider {
   position: relative;
-  max-width: 500px;
+  max-width: 1080px;
   margin: 0 auto; }
   .cards-slider:after {
     content: '';
     display: block;
     width: 100%;
     height: 80vh;
-    outline: 5px solid #61DAFB;
+    /* outline: 5px solid #61DAFB; */
     position: absolute;
     top: 0;
     left: 0; }
+
+.button-bar{
+  text-align: center;
+}
+
+.portBtn{
+  margin: 1rem 0 1rem 0;
+  height: 4rem;
+  width: 50%;
+  height: 2rem;
+  border: none;
+}
+
+.portBtn:hover{
+  background: rgba(255, 0, 0, 1);
+  transition: 700ms;
+  color: #f3f3f3;
+}
+
+.features{
+  width: 100%;
+}
+
+.portLink {
+  margin-left: 40%;
+}
+
+#root{
+  background-color: #999999;
+}
+
 
 
 @keyframes App-logo-spin {

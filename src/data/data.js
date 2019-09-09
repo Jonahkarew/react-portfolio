@@ -5,25 +5,25 @@ const data = {
         {
             '_id':57283,
             'index': 0,
-            'image' : require('../assets/images/llf-react.jpg'),
+            'image' : require('../assets/images/llfrere.png'),
             'title': 'Long Lost Friends',
             'link': 'https://long-lost-friends.herokuapp.com/',
             'repo': 'https://github.com/rishirsud/llf-react',
-            'description': 'this is a description'
+            'description': 'https://github.com/rishirsud/llf-react/blob/master/README.md'
         },
         {
             '_id':57284,
             'index': 1,
-            'image' : require('../assets/images/ScrapeIt.PNG'),
+            'image' : require('../assets/images/scraperere.png'),
             'title': 'Scrape It!',
-            'link': 'https://jonahkarew.github.io/project1_master/',
-            'repo': 'https://github.com/Jonahkarew/project1_master',
-            'description': ''
+            'link': 'https://jonahkarew.github.io/ScrapeIt/',
+            'repo': 'https://github.com/Jonahkarew/ScrapeIt',
+            'description': 'https://github.com/Jonahkarew/ScrapeIt/blob/master/README.md'
         },
         {
             '_id':57285,
             'index': 2,
-            'image' : require('../assets/images/NoteTaker.PNG'),
+            'image' : require('../assets/images/notetakerrere.png'),
             'title': 'NoteTaker',
             'link': 'https://jonah-karew-note-taker.herokuapp.com/',
             'repo': 'https://github.com/Jonahkarew/note-taker',
@@ -32,7 +32,7 @@ const data = {
         {
             '_id':57286,
             'index': 3,
-            'image' : require('../assets/images/MemoryGame.PNG'),
+            'image' : require('../assets/images/pkmnrere.png'),
             'title': 'Pokemon Memory Game',
             'link': 'https://jonahkarew.github.io/memory-game/',
             'repo': 'https://github.com/Jonahkarew/memory-game',

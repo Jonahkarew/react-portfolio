@@ -39,19 +39,23 @@ class Portfolio extends Component {
                 <div>
                     <Navbar></Navbar>
 
+
+                    <div className="button-bar">
                     {/* next project button */}
-                    <button onClick={() => this.prevProject()}
+                    <button className='portBtn' onClick={() => this.prevProject()}
                             disabled={project.index === 0}>
-                        last
+                        Previous
                     </button>
 
                     {/* previous project button */}
-                    <button onClick={() => this.nextProject()}
+                    <button className='portBtn' onClick={() => this.nextProject()}
                             disabled={project.index === data.projects.length-1}>
-                        next
+                        Next
                     </button>
+                    
+                    </div>
 
-                    {/* display acard for every item in data array */}
+                    {/* display a card for every item in data array */}
 
                     <div className='col'>
                         <div className={`cards-slider active-slide-${project.index}`}>

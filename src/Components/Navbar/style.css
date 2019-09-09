@@ -13,13 +13,11 @@ button:focus{
     padding: 0rem 1rem;
 }
 
-.navButton{
-    width: 100%;
-}
-
 .navButton:hover{
+    width: 100%;
     background: rgba(255, 0, 0, 1);
     transition: 700ms;
+    color: #f3f3f3;
 }
 
 .navButton:hover > a{
