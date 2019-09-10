@@ -27,7 +27,7 @@ const data = {
             'title': 'NoteTaker',
             'link': 'https://jonah-karew-note-taker.herokuapp.com/',
             'repo': 'https://github.com/Jonahkarew/note-taker',
-            'description': ''
+            'description': 'https://github.com/Jonahkarew/note-taker/blob/master/README.md'
         },
         {
             '_id':57286,
@@ -35,8 +35,8 @@ const data = {
             'image' : require('../assets/images/pkmnrere.png'),
             'title': 'Pokemon Memory Game',
             'link': 'https://jonahkarew.github.io/memory-game/',
-            'repo': 'https://github.com/Jonahkarew/memory-game',
-            'description': ''
+            'repo': 'https://github.com/Jonahkarew/memory-game/tree/newbranch',
+            'description': 'https://github.com/Jonahkarew/memory-game/blob/newbranch/README.md'
         },
         // {
         //     '_id':57287,
