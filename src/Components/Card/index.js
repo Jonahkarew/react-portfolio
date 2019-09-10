@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 const Card = ({project}) => {
@@ -12,9 +12,9 @@ const Card = ({project}) => {
                 {/* <span className='index'>{index+1}</span> */}
                 <h2 className='title'>{title}</h2>
                 <ul className='features'>
-                    <li> <a href={link} target="_blank" className='portLink'>Deployed Link</a> </li>
-                    <li><a href={repo} target="_blank" className='portLink'>Github Repository</a> </li>
-                    <li><a href={description} target="_blank" className='portLink'> ReadMe </a></li>
+                    <li> <a href={link} target="_blank" rel="noopener noreferrer" className='portLink'>Deployed Link</a> </li>
+                    <li><a href={repo} target="_blank" rel="noopener noreferrer" className='portLink'>Github Repository</a> </li>
+                    <li><a href={description} target="_blank" rel="noopener noreferrer" className='portLink'> ReadMe </a></li>
                 </ul>
             </div>
 

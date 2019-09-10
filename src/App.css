@@ -388,8 +388,39 @@ ul{
   margin-left: 40%;
 }
 
+.portLink:hover{
+  color: rgba(255, 0 ,0, 1);
+  transition: 700ms;
+}
+
+.profileImg{
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+.column{
+  background: #f3f3f3;
+  padding: 1rem;
+  height: 80vh;
+}
+
+.bio{
+  padding: 1rem;
+  width: 70%;
+  float: right;
+}
+
+.bio2{
+  padding: 1rem;
+  float: right;
+}
+
+
+
 #root{
   background-color: #999999;
+  height: 140vh;
 }
 
 
