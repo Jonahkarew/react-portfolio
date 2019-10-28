@@ -23,7 +23,7 @@ class Contact extends Component {
                                         
                                         </ul>
                                         <p> 
-                                            <a href='https://drive.google.com/file/d/1q6n-syAFJkUG71KqVB1Kown7GMHJKBjI/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+                                            <a href='https://drive.google.com/file/d/1hWHao9-Jxywc2oeBMUVQWsfYu5PE-veP/view?usp=sharing' target='_blank' rel="noopener noreferrer">
                                                     My Resume
                                             </a>
                                         </p>
