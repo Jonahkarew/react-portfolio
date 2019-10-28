@@ -33,6 +33,7 @@ class Portfolio extends Component {
 
     render(){
         const {projects, project} = this.state;
+        
 
         return(
             <Wrapper content ={

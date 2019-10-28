@@ -16,8 +16,8 @@ button:focus{
 .navButton:hover{
     width: 100%;
     background: rgba(255, 0, 0, 1);
-    transition: 700ms;
-    color: #f3f3f3;
+    transition: 500ms;
+    color: #f3f3f3 !important;
 }
 
 .navButton:hover > a{

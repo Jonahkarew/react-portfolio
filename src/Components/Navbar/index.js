@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink, Link} from 'react-router-dom';
+import { BrowserRouter as Route, NavLink, } from 'react-router-dom';
 import './style.css'
 
 
@@ -15,24 +15,24 @@ function Navbar (){
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <div className="nav-item nav-link navButton" id="homeButton">
-                            <NavLink to="/"> 
-                                Home
-                            </NavLink> 
-                            <span className="sr-only">
-                                (current)
-                            </span>
-                        </div>
-                        <div className="nav-item nav-link navButton" id="contactButton">
-                            <NavLink to="/contact"> 
-                                Contact
-                            </NavLink> 
-                        </div>
-                        <div className="nav-item nav-link navButton" id="portfolioButton">
-                            <NavLink to="/portfolio">
-                                Portfolio
-                            </NavLink>
-                        </div>
+                        <NavLink to="/"> 
+                            <div className="nav-item nav-link navButton" id="homeButton">
+                                    Home
+                                <span className="sr-only">
+                                    (current)
+                                </span>
+                            </div>
+                        </NavLink> 
+                        <NavLink to="/contact"> 
+                            <div className="nav-item nav-link navButton" id="contactButton">
+                                    Contact
+                            </div>
+                        </NavLink> 
+                        <NavLink to="/portfolio">
+                            <div className="nav-item nav-link navButton" id="portfolioButton">
+                                    Portfolio
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
             </nav>
