@@ -4,6 +4,7 @@ import Wrapper from '../Components/Wrapper/index';
 
 import data from '../data/data'
 import Card from '../Components/Card/index'
+import Carousel from '../Components/Carousel/index'
 
 
 class Portfolio extends Component {
@@ -41,32 +42,36 @@ class Portfolio extends Component {
                     <Navbar></Navbar>
 
 
-                    <div className="button-bar">
+                    {/* <div className="button-bar"> */}
                     {/* next project button */}
-                    <button className='portBtn' onClick={() => this.prevProject()}
+                    {/* <button className='portBtn' onClick={() => this.prevProject()}
                             disabled={project.index === 0}>
                         Previous
-                    </button>
+                    </button> */}
 
                     {/* previous project button */}
-                    <button className='portBtn' onClick={() => this.nextProject()}
+                    {/* <button className='portBtn' onClick={() => this.nextProject()}
                             disabled={project.index === data.projects.length-1}>
                         Next
-                    </button>
+                    </button> */}
                     
-                    </div>
+                    {/* </div> */}
 
                     {/* display a card for every item in data array */}
 
-                    <div className='col'>
+                    {/* <div className='col'>
                         <div className={`cards-slider active-slide-${project.index}`}>
                             <div className='cards-slider-wrapper' style={{'transform': `translateX(-${project.index*(100/projects.length)}%)`}}>
                                 {projects.map(project => <Card key={project._id} project={project} />)}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+                    <Carousel />
                 </div>
-                }
+                
+          
+            }
             >
                 
             </Wrapper>
