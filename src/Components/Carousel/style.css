@@ -29,6 +29,9 @@
     border: 1px solid white;
     width: 80%;
 }
+.descriptionContainer{
+    margin-bottom: 2%;
+}
 
 .descriptor{
     color: white;
