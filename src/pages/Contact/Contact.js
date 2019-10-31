@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../Components/Navbar/index.js';
-import Wrapper from '../Components/Wrapper/index';
+import Navbar from '../../Components/Navbar/index.js';
+import Wrapper from '../../Components/Wrapper/index';
 
 class Contact extends Component {
 
