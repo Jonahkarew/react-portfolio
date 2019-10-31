@@ -21,22 +21,48 @@ class DemoCarousel extends Component {
             >
 
                 <div id='frame1'>
-                    <img src={require("./assets/llfrere.png")} alt='long lost friends react' />
-                    <p className='projectTitle'>this here is another thing</p>
-                    <p className='link'><a href='https://www.google.com' target='_blank' rel="noopener noreferrer">Github</a></p>
+                    <img src={require("./assets/llfrere.png")} alt='long lost friends react'/>
+                    <p className='projectTitle'>Long Lost Friends - React</p>
+                    <hr className='titleSeperator'></hr>
+                    <a className='projectLink' href='https://long-lost-friends.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react' target='_blank' rel="noopener noreferrer">Github</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
                     <div className='descriptor'>flexitarian scenester forage keffiyeh deep v fanny pack Odd Future Helvetica 90's VHS Tonx keytar DIY raw denim Truffaut irony tote bag fap butcher Shoreditch chillwave trust fund try-hard PBR&B four loko cardigan post-ironic gastropub bitters sriracha fingerstache selfies narwhal food truck squid tousled Portland Cosby sweater authentic kogi whatever seitan paleo mustache heirloom chia tofu vinyl selvage art party Tumblr artisan pop-up lomo vegan single-origin coffee flannel swag Schlitz brunch typewriter Intelligentsia street art Neutra hoodie lo-fi before they sold out hella Bushwick bicycle rights normcore aesthetic master cleanse twee Marfa PBR literally pour-over cred High Life pickled Blue Bottle cray wolf 3 wolf moon drinking vinegar leggings synth fixie ennui polaroid bespoke pork belly Godard asymmetrical photo booth meggings mixtape gluten-free Pitchfork kitsch small batch distillery locavore actually next level banjo jean shorts American Apparel Brooklyn Etsy direct trade  you probably haven't heard of them Williamsburg cliche Carles organic ethical Echo Park farm-to-table wayfarers Kickstarter Austin stumptown Vice beard iPhone letterpress blog McSweeney's plaid sustainable pug freegan mumblecore dreamcatcher quinoa retro YOLO yr semiotics kale chips viral 8-bit +1 salvia readymade hashtag biodiesel Pinterest fashion axe disrupt skateboard tattooed Wes Anderson Banksy Thundercats slow-carb roof party church-key sartorial gentrify crucifix XOXO messenger bag shabby chic banh mi cornhole umami put a bird on it occupy ugh meh craft beer chambray mlkshk</div>
                 </div>
                 <div>
                     <img src={require("./assets/pkmnrere.png")} alt='pokemon selector game' />
-                    <p className="legend">Legend 2</p>
+                    <p className='projectTitle'>Pokemon Memory Game - React</p>
+                    <hr className='titleSeperator'></hr>
+                    <a className='projectLink' href='https://long-lost-friends.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react' target='_blank' rel="noopener noreferrer">Github</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
+                    <div className='descriptor'>flexitarian scenester forage keffiyeh deep v fan </div>
                 </div>
                 <div>
                     <img src={require('./assets/scrapeit_re.PNG')} alt='reddit spotify scraping application' />
-                    <p className="legend">Legend 3</p>
+                    <p className='projectTitle'>ScrapeIt!</p>
+                    <hr className='titleSeperator'></hr>
+                    <a className='projectLink' href='https://long-lost-friends.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react' target='_blank' rel="noopener noreferrer">Github</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
+                    <div className='descriptor'>flexitarian scenester forage keffiyeh deep v fan </div>
                 </div>
                 <div>
                     <img src={require('./assets/notetakerrere.png')} alt='random' />
-                    <p className="legend">Legend 3</p>
+                    <p className='projectTitle'>Note Taker</p>
+                    <hr className='titleSeperator'></hr>
+                    <a className='projectLink' href='https://long-lost-friends.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react' target='_blank' rel="noopener noreferrer">Github</a>
+                    <br></br>
+                    <a className='projectLink' href='https://github.com/rishirsud/llf-react/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
+                    <div className='descriptor'>flexitarian scenester forage keffiyeh deep v fan </div>
                 </div>
             </Carousel>
         );
