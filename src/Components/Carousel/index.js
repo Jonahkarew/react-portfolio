@@ -17,8 +17,9 @@ class DemoCarousel extends Component {
             infiniteLoop={true}
             useKeyboardArrows={true}
             showIndicators={false}
-            
-            width={'860px'}>
+            width={'95%'}
+            >
+
                 <div id='frame1'>
                     <img src={require("./llfrere.png")} alt='random' />
                     {/* <img src="https://source.unsplash.com/random/640x480" alt='random' /> */}
