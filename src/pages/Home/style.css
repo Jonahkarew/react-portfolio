@@ -1,0 +1,26 @@
+.column{
+    margin: auto;
+    margin-top: 1rem;
+    background: #f3f3f3;
+    padding: 1rem;
+    height: 80vh;
+    width: 95%;
+}
+
+.profileImg{
+    width: 30%;
+    height: auto;
+    float: left;
+  }
+
+.bio{
+    padding: 1rem;
+    width: 70%;
+    float: right;
+  }
+  
+  .bio2{
+    padding: 1rem;
+    float: right;
+  }
+  

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar/index.js';
 import Wrapper from '../../Components/Wrapper/index';
+import './style.css'
 
 class Contact extends Component {
 
@@ -19,7 +20,7 @@ class Contact extends Component {
                                             <li> jonahkarew@gmail.com</li>
                                             <li>732-551-8773   </li>
                                             <li><a href='https://www.linkedin.com/in/jonahkarew' target='_blank' rel="noopener noreferrer">LinkedIn </a>   </li>
-                                            <li > <a href='https://github.com/Jonahkarew' target='_blank' rel="noopener noreferrer"> Github </a>  </li>
+                                            <li ><a href='https://github.com/Jonahkarew' target='_blank' rel="noopener noreferrer"> Github </a>  </li>
                                         
                                         </ul>
                                         <p> 

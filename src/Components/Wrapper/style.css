@@ -1,5 +1,7 @@
 .wrapper{
-    box-sizing: border-box !important;
+    box-sizing: border-box 
+    /* !important; */
+    ;
     margin: auto;
 }
 
