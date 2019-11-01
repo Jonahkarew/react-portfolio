@@ -20,8 +20,9 @@ class Home extends Component {
                     <Navbar />
 
                     <div>
-                     <div className='column'>
-                        <img src={require('./assets/profile.JPG')} className='profileImg' alt='Jonah Karew'/>
+                     <div className='column' id='homeColumn'>
+                        {/* <img src={require('./assets/profile.JPG')} className='profileImg' alt='Jonah Karew'/> */}
+                        <div id='profileImageDiv' alt='Jonah Karew'></div>
                         <p className='bio'>Goal-oriented Web Developer with strong commitment to collaboration and solutions-oriented problem-solving. Use various web design software to develop customer-focused websites and designs. Committed to high standards of web design, user experience, usability and speed for multiple types of end-users. Successful at maintaining customer satisfaction through effective customer support.</p>
                         <p className='bio2'>As a driven Web Developer, I have felt a pull toward technology since I was very young. 
                         I graduated an intensive Web Development Bootcamp at Rutgers.

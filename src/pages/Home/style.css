@@ -3,7 +3,7 @@
     margin-top: 1rem;
     background: #f3f3f3;
     padding: 1rem;
-    height: 80vh;
+    height: 98vh;
     width: 95%;
 }
 
@@ -24,3 +24,50 @@
     float: right;
   }
   
+  #profileImageDiv{
+    
+    /* width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat:no-repeat; */
+    background-image: url('./assets/profile.JPG');
+  
+
+    width:200px; height:200px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	/* background-position: 50% 50%; */
+	padding:3px;
+	background-color:#FFF;
+	border:1px solid #f2f2f2;
+	border-radius:50%;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0, .7);
+	overflow:hidden;
+	display:block;
+  text-align:center;
+  float: left;
+	/* margin:0 auto; */
+  }
+
+  @media (max-width:500px){
+    #profileImageDiv{
+      margin: 0 auto;
+      float: none;
+    }
+
+    .bio{
+      padding: 1rem;
+      width: 100%;
+      float: none;
+      margin: auto;
+    }
+    
+    .bio2{
+      padding: 1rem;
+      float: none;
+    }
+
+    #homeColumn{
+      height: 100%;
+    }
+  }
