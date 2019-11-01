@@ -10,3 +10,35 @@
 .contactInfo{
     text-align: center;  
   }
+
+.contactLink{
+    color: black;
+    padding: 2px;
+    border-spacing: 1px;
+}
+
+.contactLink:hover{
+    color:black;
+}
+
+.contactListItem{
+    margin-top: 1rem;
+    border-spacing: 1px;
+    padding: 0.2em;
+    border: 1px solid #f3f3f3;
+}
+
+.contactListItem:hover{
+    border: 1px solid black;
+}
+
+.contactIcon{
+    margin-right: 0.5em;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: none !important;
+  }
+  

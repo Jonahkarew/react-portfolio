@@ -8,12 +8,16 @@ import './style.css';
 class Portfolio extends Component {
     render(){
         return(
-            <Wrapper content ={
-                <div>
-                    <Navbar></Navbar>
-                    <Carousel />
-                </div>
-            } />
+            <React.Fragment>
+                <Wrapper content ={
+                    <div>
+                        <Navbar></Navbar>
+                        <div>
+                            <Carousel />
+                        </div>
+                    </div>
+                } />
+            </React.Fragment>
         )
     }
 }
