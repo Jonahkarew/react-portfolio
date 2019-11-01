@@ -25,34 +25,39 @@ class Contact extends Component {
                                                 <img src={require('./assets/Phone.png')} className='contactIcon' alt='Phone icon'></img>
                                                 732-551-8773   
                                             </li>
-                                            <li className='contactListItem'>
-                                                <img src={require('./assets/social-011_linkedin.png')} className='contactIcon' alt='LinkedIn icon'></img>
-                                                <a href='https://www.linkedin.com/in/jonahkarew' 
+
+                                            <a href='https://www.linkedin.com/in/jonahkarew' 
                                                     target='_blank' 
                                                     rel="noopener noreferrer" 
                                                     className='contactLink'>
-                                                LinkedIn 
-                                                </a>   
-                                            </li>
+                                                <li className='contactListItem'>
+                                                    <img src={require('./assets/social-011_linkedin.png')} className='contactIcon' alt='LinkedIn icon'></img>
+                                                    LinkedIn
+                                                </li>
+                                            </a> 
+
+                                            <a  href='https://github.com/Jonahkarew' 
+                                                target='_blank' 
+                                                rel="noopener noreferrer" 
+                                                className='contactLink'> 
                                             <li className='contactListItem'>
                                             <img src={require('./assets/social-041-round_github.png')} className='contactIcon' alt='Github icon'></img>
-                                                <a  href='https://github.com/Jonahkarew' 
-                                                    target='_blank' 
-                                                    rel="noopener noreferrer" 
-                                                    className='contactLink'> 
+                                             
                                                 Github 
-                                                </a>  
+                                               
                                             </li>
-                                            <li className='contactListItem'>
-                                            <img src={require('./assets/document.png')} className='contactIcon' alt='document icon'></img>
-                                                <a  href='https://drive.google.com/file/d/1hWHao9-Jxywc2oeBMUVQWsfYu5PE-veP/view?usp=sharing' 
+                                             </a>
+                                             <a     href='https://drive.google.com/file/d/1oaapaDbfhwzhxz4MvBe90Ysxg2k7VMLy/view?usp=sharing' 
                                                     target='_blank' 
                                                     rel="noopener noreferrer"
                                                     className='contactLink'>
+                                            <li className='contactListItem'>
+                                            <img src={require('./assets/document.png')} className='contactIcon' alt='document icon'></img>
+                                                
                                                         My Resume
-                                                </a>
+                                                
                                             </li>
-                                        
+                                            </a>
                                         </ul>
                                     </div>
                                 </div>
