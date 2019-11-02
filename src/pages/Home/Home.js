@@ -14,9 +14,7 @@ class Home extends Component {
                 <Wrapper 
                 content={
                 <div>
-                
                     <Navbar />
-
                     <div>
                      <div className='column' id='homeColumn'>
                         {/* <img src={require('./assets/profile.JPG')} className='profileImg' alt='Jonah Karew'/> */}
