@@ -23,7 +23,9 @@ class Contact extends Component {
                                             </li>
                                             <li className='contactListItem'>
                                                 <img src={require('./assets/Phone.png')} className='contactIcon' alt='Phone icon'></img>
-                                                732-551-8773   
+                                                
+                                                732-551-8773
+
                                             </li>
 
                                             <a href='https://www.linkedin.com/in/jonahkarew' 
@@ -32,7 +34,9 @@ class Contact extends Component {
                                                     className='contactLink'>
                                                 <li className='contactListItem'>
                                                     <img src={require('./assets/social-011_linkedin.png')} className='contactIcon' alt='LinkedIn icon'></img>
+                                                    
                                                     LinkedIn
+
                                                 </li>
                                             </a> 
 
@@ -54,7 +58,7 @@ class Contact extends Component {
                                             <li className='contactListItem'>
                                             <img src={require('./assets/document.png')} className='contactIcon' alt='document icon'></img>
                                                 
-                                                        My Resume
+                                                My Resume
                                                 
                                             </li>
                                             </a>
