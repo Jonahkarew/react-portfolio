@@ -50,7 +50,7 @@ class DemoCarousel extends Component {
                        </div>
                 </div>
                 <div>
-                    <img src={require("./assets/pkmnrere.png")} alt='pokemon selector game' />
+                    <img src={require("./assets/pkmnmemory.png")} alt='pokemon selector game' />
                     <p className='projectTitle'>Pokemon Memory Game - React</p>
                     <hr className='titleSeperator'></hr>
                     <a className='projectLink' href='https://pokemon-memory-gamejk.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
