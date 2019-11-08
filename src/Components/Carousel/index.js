@@ -53,13 +53,12 @@ class DemoCarousel extends Component {
                     <img src={require("./assets/pkmnrere.png")} alt='pokemon selector game' />
                     <p className='projectTitle'>Pokemon Memory Game - React</p>
                     <hr className='titleSeperator'></hr>
-                    <a className='projectLink' href='https://jonahkarew.github.io/memory-game/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <a className='projectLink' href='https://pokemon-memory-gamejk.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
                     <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game/tree/newbranch' target='_blank' rel="noopener noreferrer">Github</a>
+                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game' target='_blank' rel="noopener noreferrer">Github</a>
                     <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game/blob/newbranch/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                    <
-                        div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
+                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
+                    < div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
                 </div>
                 <div>
                     <img src={require('./assets/scrapeit_re.PNG')} alt='reddit spotify scraping application' />
