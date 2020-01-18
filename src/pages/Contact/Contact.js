@@ -60,7 +60,7 @@ class Contact extends Component {
                                                 
                                                 </li>
                                              </a>
-                                             <a     href='https://drive.google.com/file/d/14St2j5BWBhs9NFddSyynH0WE7wKI0CF2/view?usp=sharing' 
+                                             <a     href='https://drive.google.com/file/d/1YsgxwRb2v9zrLfnKMcm2cp2to0oZWKON/view?usp=sharing' 
                                                     target='_blank' 
                                                     rel="noopener noreferrer"
                                                     className='contactLink'>
