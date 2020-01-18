@@ -34,7 +34,7 @@ ul{
     border: 1px solid #f3f3f3;
 }
 
-.contactListItem:hover{
+.contactListItemInt:hover{
     border: 1px solid black;
 }
 

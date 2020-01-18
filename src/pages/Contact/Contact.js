@@ -37,7 +37,7 @@ class Contact extends Component {
                                                     target='_blank' 
                                                     rel="noopener noreferrer" 
                                                     className='contactLink'>
-                                                <li className='contactListItem'>
+                                                <li className='contactListItem  contactListItemInt'>
                                                     <img src={require('./assets/social-011_linkedin.png')} 
                                                     className='contactIcon' 
                                                     alt='LinkedIn icon'></img>
@@ -51,7 +51,7 @@ class Contact extends Component {
                                                     target='_blank' 
                                                     rel="noopener noreferrer" 
                                                     className='contactLink'> 
-                                                <li     className='contactListItem'>
+                                                <li     className='contactListItem  contactListItemInt'>
                                                 <img    src={require('./assets/social-041-round_github.png')} 
                                                         className='contactIcon' 
                                                         alt='Github icon'></img>
@@ -60,11 +60,11 @@ class Contact extends Component {
                                                 
                                                 </li>
                                              </a>
-                                             <a     href='https://drive.google.com/file/d/1oaapaDbfhwzhxz4MvBe90Ysxg2k7VMLy/view?usp=sharing' 
+                                             <a     href='https://drive.google.com/file/d/14St2j5BWBhs9NFddSyynH0WE7wKI0CF2/view?usp=sharing' 
                                                     target='_blank' 
                                                     rel="noopener noreferrer"
                                                     className='contactLink'>
-                                            <li     className='contactListItem'>
+                                            <li     className='contactListItem  contactListItemInt'>
                                             <img    src={require('./assets/document.png')} 
                                                     className='contactIcon' 
                                                     alt='document icon'></img>
