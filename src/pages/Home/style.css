@@ -40,7 +40,7 @@
     float: left;
   }
 
-  @media (max-width:500px){
+  @media (min-width:500px){
     #profileImageDiv{
       margin: 0 auto;
       float: none;
