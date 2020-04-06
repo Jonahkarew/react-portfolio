@@ -1,9 +1,11 @@
 import React from 'react';
-import './style.css'
+import styles from './style.module.css';
 
-function Wrapper (props) {
+function  Wrapper  ({children})  {
     return (
-        <div className="wrapper"> {props.content} </div>
+        <div className={styles.wrapper}>
+            {children}
+         </div>
     )
 }
 
