@@ -1,11 +1,12 @@
  .column{
     margin: 0.5em auto;
     margin-top: 1rem;
-    background: #f3f3f3;
+    /* background: #f3f3f3e0; */
     padding: 2rem;
     height: 98%;
     width: 95%;
     border-radius: 10px;
+    /* border: #000000 1px solid; */
     /* transform: skew(-5deg); */
 }
 

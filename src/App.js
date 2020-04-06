@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 import Home from './pages/Home/Home';
 // import Contact from './pages/Contact/Contact';
-// import Portfolio from './pages/Portfolio/Portfolio'
+// import Portfolio from './pages/Portfolio/Portfolio';
+import DotCanvas from './Components/DotCanvas'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
 
     <React.Fragment>
+      <DotCanvas />
       <Home />
     </React.Fragment>
     
