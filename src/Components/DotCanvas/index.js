@@ -96,10 +96,7 @@ function DotCanvas() {
 
     
     function allTogether()  {
-         var canvas = canvasRef.current;
-        //  var context = canvas.getContext("2d");
-        //  var canvasHeight = height;
-        //  var canvasWidth = width;
+
     
      for (var i=0; i< dots.length; i++){
         drawDot(dots[i])

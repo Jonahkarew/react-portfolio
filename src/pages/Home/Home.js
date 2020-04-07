@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from '../../Components/Navbar/index.js';
 import Wrapper from '../../Components/Wrapper/index';
-import Carousel from '../../Components/Carousel/index'
+import Carousel from '../../Components/Carousel/index';
+import ContactForm from '../../Components/ContactForm/index'
 import styles from './style.module.css'
 
 
@@ -24,6 +25,12 @@ class Home extends Component {
                 </div>
                 <div    id="portfolioCarousel" >
                     <Carousel />
+                </div>
+                <div id="contactSection" style={{
+                      height: "400px",
+                      width: "100%"
+                }}>
+                    <ContactForm />
                 </div>
                 
             </Wrapper>

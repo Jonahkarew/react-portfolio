@@ -28,25 +28,18 @@
 }
 
 .bioAnchor{
-  width: 30px;
-  height: 30px;
-  background-color: red;
+ 
+  /* background-color: red; */
   position: absolute;
   left: 50%;
-  display: none;
+  top: 0;
+  /* display: ; */
 }
 
 .bio{
   margin-top: 1rem;
-    /* padding: 1rem; */
-    /* width: 70%; */
-    /* float: right; */
   }
 
-  
-  /* .bio2{
-    /* padding: 1rem; */
-    /* float: right; */
   
   
   .profileImageDiv{

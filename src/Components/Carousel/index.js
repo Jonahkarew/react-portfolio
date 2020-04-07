@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import './style.css'
@@ -18,13 +17,16 @@ class DemoCarousel extends Component {
             infiniteLoop={true}
             useKeyboardArrows={true}
             stopOnHover={true}
-            showIndicators={true}
+            showIndicators={false}
             width={'95%'}
             >
+               
                   <div>
                     <img src={require('./assets/scrapeit_re.PNG')} alt='reddit spotify scraping application' />
                     <p className='projectTitle'>ScrapeIt!</p>
+                   
                     <hr className='titleSeperator'></hr>
+              
                     <a className='projectLink' href='https://jonahkarew.github.io/ScrapeIt/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
                     <br></br>
                     <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt' target='_blank' rel="noopener noreferrer">Github</a>
@@ -32,7 +34,9 @@ class DemoCarousel extends Component {
                     <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
                     
                     <div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
+                  
                 </div>
+                
                 <div id='frame1'>
                     <img src={require("./assets/llfrere.png")} alt='long lost friends react'/>
                     <div className='descriptionContainer'>
