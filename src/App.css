@@ -6,3 +6,8 @@ h2{
 a {
   text-decoration: none !important;
 }
+
+
+::-webkit-scrollbar{
+  width: 30px;
+}

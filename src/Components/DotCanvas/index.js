@@ -10,6 +10,7 @@ function DotCanvas() {
     const canvasRef = React.createRef();
 
     const dots = [
+        // big dots
         { x: 100, y: 100, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '+', frames: 1.3, color: '#ffc51b80'},
         { x: 120, y: 120, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '+', frames: 0.8, color: '#ffd14a80'},
         { x: 40, y: 200,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: 0.3, color: '#4089be80'},
@@ -18,12 +19,17 @@ function DotCanvas() {
         { x: 280, y: 315, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '-', frames: 1.5, color: '#d13A0280'},
         { x: 150, y: 35,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: 0.5, color: '#4089be80'},
         { x: 170, y: 65,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: 0.7, color: '#09528680'},
+
+        // itty bitty dots
+        { x: 250, y: 300, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '-', frames:   1, color: '#ff7b4a80'},
+        { x: 280, y: 315, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '-', frames: 1.5, color: '#d13A0280'},
+        { x: 150, y: 35,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '-', frames: 0.5, color: '#4089be80'},
+        { x: 170, y: 65,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '-', frames: 0.7, color: '#09528680'},
     ]
 
     useEffect(() => {
         const canvas = canvasRef.current;
         const context = canvas.getContext("2d")
-        console.log(dots)
   
 
         if(canvasRef.current){
@@ -31,7 +37,6 @@ function DotCanvas() {
             setWidth(canvasRef.current.getBoundingClientRect().width)
         }
 
-        console.log(width)
 
       
         allTogether()
@@ -45,14 +50,14 @@ function DotCanvas() {
     
         for (var i =0; i <dots.length; i++){
     
-            if(dots[i].xMove == "+"){
+            if(dots[i].xMove === "+"){
                 dots[i].x += dots[i].frames;
             }
             else{
                 dots[i].x -= dots[i].frames
             }
     
-            if(dots[i].yMove == "+"){
+            if(dots[i].yMove === "+"){
                 dots[i].y += dots[i].frames
             }
             else{
@@ -92,9 +97,9 @@ function DotCanvas() {
     
     function allTogether()  {
          var canvas = canvasRef.current;
-         var context = canvas.getContext("2d");
-         var canvasHeight = height;
-         var canvasWidth = width;
+        //  var context = canvas.getContext("2d");
+        //  var canvasHeight = height;
+        //  var canvasWidth = width;
     
      for (var i=0; i< dots.length; i++){
         drawDot(dots[i])
@@ -114,7 +119,7 @@ function DotCanvas() {
         className={styles.canvas}
             ref={canvasRef}
             style={{
-                height: '100vh',
+                height: '1000px',
                 width: '100%'
             }}
             height={height}

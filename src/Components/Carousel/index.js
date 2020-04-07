@@ -12,11 +12,13 @@ import './style.css'
 class DemoCarousel extends Component {
     render() {
         return (
-            <Carousel autoPlay 
+            <Carousel
+            autoPlay
             interval={30000}
             infiniteLoop={true}
             useKeyboardArrows={true}
-            showIndicators={false}
+            stopOnHover={true}
+            showIndicators={true}
             width={'95%'}
             >
                   <div>
@@ -71,18 +73,6 @@ class DemoCarousel extends Component {
                     <a className='projectLink' href='https://github.com/Jonahkarew/memory-game/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
                     < div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
                 </div>
-                {/* <div>
-                    <img src={require('./assets/scrapeit_re.PNG')} alt='reddit spotify scraping application' />
-                    <p className='projectTitle'>ScrapeIt!</p>
-                    <hr className='titleSeperator'></hr>
-                    <a className='projectLink' href='https://jonahkarew.github.io/ScrapeIt/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt' target='_blank' rel="noopener noreferrer">Github</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                    
-                    <div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
-                </div> */}
                 <div>
                     <img src={require('./assets/notetakerrere.png')} alt='random' />
                     <p className='projectTitle'>Note Taker</p>
