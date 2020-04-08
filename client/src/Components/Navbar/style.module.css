@@ -25,7 +25,8 @@
     padding: 6px;
     color: #000000;
     border: #000000 1px solid;
-    border-radius: 20px ;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
 .buttonsDiv{
@@ -36,6 +37,7 @@
         background-color:#000000;
         border: #ffffff 1px solid;
         color: #ffffff;
+        transition: 0.3s;
 }
 
 @supports (-webkit-text-stroke: 1px black){

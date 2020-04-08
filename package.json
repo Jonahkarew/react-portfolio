@@ -1,34 +1,35 @@
 {
   "name": "react-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-responsive-carousel": "^3.1.51",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "shards-react": "^1.0.3"
-  },
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*\" \"npm run client",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm run install",
+    "build": "cd client && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonahkarew/react-portfolio.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Jonah Karew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonahkarew/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/Jonahkarew/react-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2"
   }
 }

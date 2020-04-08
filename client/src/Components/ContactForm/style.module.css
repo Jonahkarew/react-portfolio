@@ -1,0 +1,57 @@
+.contactForm{
+    margin: 2em;
+}
+
+.formQ{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.qHeader{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.qInput{
+    margin: 1em auto;
+    height: 2em;
+    width: 100%;
+}
+
+.qInputField{
+    margin: 1em auto;
+    height: 4em;
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.button{
+    display: block;
+    float: right;
+    text-align: center;
+    width: 80px;
+    margin: 4px 6px;
+    padding: 6px;
+    color: #000000;
+    border: #000000 1px solid;
+    border-radius: 20px ;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color:#000000;
+    border: #ffffff 1px solid;
+    color: #ffffff;
+    transition: .3s;
+}
+
+::placeholder { 
+   font-style: italic;
+    opacity: 0.8; 
+  }
