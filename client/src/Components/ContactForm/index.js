@@ -3,13 +3,19 @@ import styles from './style.module.css';
 
 function ContactForm() {
 
-    const [message, setMessage] = useState(0);
+    const [message, setMessage] = useState(undefined);
     const [name, setName] = useState(0);
-    const [email, setEmail] = useState(0);
+    const [email, setEmail] = useState(1);
     const [sent, setSent] = useState(false);
-    const [buttonText, setButtonText] = useState("Let's Talk");
-    const [currentQ, setCurrentQ] = useState(0);
-    const formRef = React.createRef();
+    const [buttonText, setButtonText] = useState("Let's Chat");
+    let [currentQ, setCurrentQ] = useState(0);
+    // const inputRef = React.createRef()
+    // const [inputClass, setInputClass] = useState(
+    //     [{ nameInputClass: styles.formQ },
+    //     { emailInputClass: styles.hidden},
+    //     { messageInputClass: styles.hidden }
+
+    //     ])
 
     const formSubmit = () => {
         setButtonText(
@@ -27,11 +33,13 @@ function ContactForm() {
             console.log("sending");
             console.log(data)
 
-            setButtonText(
-                'Sent!'
-            );
+
         }, 2000)
 
+        console.log(sent)
+        setButtonText(
+            'Sent!'
+        );
 
         fetch('/api/v1', {
             method: 'POST',
@@ -47,20 +55,101 @@ function ContactForm() {
 
     }
 
-    const nextQ = () => {
-        formRef.nth
+    const nextButton = <div
+        className={styles.button}
+        onClick={nextQuestion}
+    >
+        Next
+</div>
+    const sendButton = <div
+        className={styles.button}
+        onClick={formSubmit}
+    >
+        {buttonText}
+    </div>
+
+
+    const questions = [{
+        label: "Your Name",
+        placeholder: "Your Name",
+        perform: setName,
+        button: nextButton,
+        value: name
+    },
+    {
+        label: "Your Email",
+        placeholder: "Your Email",
+        perform: setEmail,
+        button: nextButton
+    },
+    {
+        label: "Your Message",
+        placeholder: "Your Message",
+        perform: setMessage,
+        button: sendButton
+    }]
+
+    const inputClasses = [
+        {inputClass: styles.formQ},
+        {inputClass: styles.hidden},
+        {inputClass: styles.hidden}
+    ]
+
+    function nextQuestion() {
+       inputClasses[currentQ + 1] = styles.formQ 
+       console.log(inputClasses)
+       inputClasses[currentQ] = styles.hidden
+        setCurrentQ(currentQ += 1)
     }
 
-    const renderQuestion = () => {
-        if (currentQ){
-            render
-        }
-    }
+    // console.log(inputClass)
 
     return (
         <div>
-            <form ref={formRef} className={styles.contactForm} >
-                
+            <form className={styles.contactForm} >
+                {/* ===================================================== */}
+                <div className={inputClasses[0].inputClass}>
+                    <label className={styles.qHeader}
+                        htmlFor="message-name">
+                        Name
+                    </label>
+                    <input
+                        className={styles.qInput}
+                        onChange={e => questions[currentQ].perform(e.target.value)}
+                        name="textInputBar"
+                        type="text"
+                        // value={questions[currentQ].value}
+                        placeholder="Your Name Here"
+                        required />
+
+                    <div
+                        className={styles.button}
+                        onClick={nextQuestion}>
+                        Next
+                    </div>
+                </div>
+                {/* ================================================== */}
+                <div className={inputClasses[1].inputClass}>
+                    <label className={styles.qHeader}
+                        htmlFor="message-name">
+                        Email
+                    </label>
+                    <input
+                        className={styles.qInput}
+                        onChange={e => questions[currentQ].perform(e.target.value)}
+                        name="textInputBar"
+                        type="text"
+                        // value={questions[currentQ].value}
+                        placeholder="Your Email Here"
+                        required />
+
+                    <div
+                        className={styles.button}
+                        onClick={nextQuestion}>
+                        Next
+                    </div>
+                </div>
+                {/*                 
                 <div className={styles.formQ}>
                     <label className={styles.qHeader}
                         htmlFor="message-name">
@@ -75,7 +164,7 @@ function ContactForm() {
                         required />
                     <div
                         className={styles.button}
-                        onClick={renderQuestion}>
+                        >
                         Next
                     </div>
                 </div>
@@ -109,13 +198,9 @@ function ContactForm() {
                         Next
                     </div>
                 </div>
-                <div className="button--container">
-                    <div type="submit"
-                        className={styles.button}
-                        onClick={formSubmit}>
-                        {buttonText}
-                    </div>
-                </div>
+               
+             */}
+
             </form>
         </div>
     )
