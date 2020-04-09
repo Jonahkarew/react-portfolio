@@ -16,6 +16,12 @@ app.use(bodyParser.urlencoded({ extended: true}));
 //     next();
 //   });
 
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))
+  }
+  
+
 app.use(cors());
 
 app.post('/api/v1', (req, res) => {
@@ -58,7 +64,7 @@ app.post('/api/v1', (req, res) => {
 })
 
 app.get('*', (req, res) => {                       
-    res.sendFile(path.resolve(__dirname, './client/', 'index.html'));                               
+    res.sendFile(path.resolve(__dirname, './client', 'index.html'));                               
   });
 
 app.listen(port, () => {
