@@ -57,6 +57,10 @@ app.post('/api/v1', (req, res) => {
     })
 })
 
+app.get('*', (req, res) => {                       
+    res.sendFile(path.resolve(__dirname, './client/', 'index.html'));                               
+  });
+
 app.listen(port, () => {
     console.log(`app is listening on port ${port}`);
 });
