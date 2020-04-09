@@ -68,7 +68,12 @@ function ContactForm() {
             <form className={styles.contactForm} >
                 {
                     currentQ === 0 ?
-                        <p className={styles.formIntro}>If you'd like to talk, feel free to <span className={styles.beginForm}>Contact Me</span> </p>
+                        <p className={styles.formIntro}>If you'd like to talk, feel free to
+                        <span className={styles.beginForm}
+                              onClick={nextQuestion}>
+                                Contact Me
+                            </span>
+                        </p>
                         :
                         null
                 }
@@ -155,7 +160,7 @@ function ContactForm() {
                 {
                     sent ?
                         <div className={styles.thankYou}>
-                            <h2>{buttonText}</h2>
+                            <h2 className={styles.sentSuccess}>{buttonText}</h2>
                             <h3>Thank you for your message.</h3>
                             <h3>I'll reach out to you as soon as I am able!</h3>
                         </div>

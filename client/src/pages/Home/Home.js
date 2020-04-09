@@ -27,7 +27,7 @@ class Home extends Component {
                     <Carousel />
                 </div>
                 <div id="contactSection" style={{
-                      height: "300px",
+                      height: "600px",
                       width: "100%"
                 }}>
                     <ContactForm />
