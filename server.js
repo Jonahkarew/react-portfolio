@@ -18,10 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true}));
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('Welcome to my api');
-})
-
 app.post('/api/v1', (req, res) => {
     var data = req.body;
     // console.log(req)
