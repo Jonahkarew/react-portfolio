@@ -5,9 +5,7 @@ import styles from './style.module.css'
 function Navbar (){
 
 
-    return (
-        <React.Fragment>
-          
+    return (      
             <nav className={styles.navContainer}>
                 <div className={styles.jk}>
                     JK
@@ -18,7 +16,6 @@ function Navbar (){
                     <a href="#bioAnchor"><div className={styles.button}>Bio</div></a>
                 </div>
             </nav>
-        </React.Fragment>
     )
 
 
