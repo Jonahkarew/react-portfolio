@@ -1,4 +1,26 @@
+.formIntro{
+    text-align: center;
+    margin: 100px 0 0;
+}
+
+.beginForm{
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 4px 4px 3px;
+    padding: 4px 4px 3px;
+    color: #ffc51b;
+    border-bottom: 1px solid #ffc51b;
+}
+
+.beginForm:hover{
+    background-color: #ffc51b;
+    color: white;
+    transition: left 7s ease-out;
+
+}
+
 .contactForm{
+    display: block;
     margin: 2em;
 }
 
@@ -16,9 +38,12 @@
 }
 
 .qInput{
-    margin: 1em auto;
+    margin: 0.5em auto 1em;
     height: 2em;
     width: 100%;
+    border: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .qInputField{
@@ -53,5 +78,14 @@
 
 ::placeholder { 
    font-style: italic;
-    opacity: 0.8; 
+   opacity: 0.8;
+   padding-inline-start: 1em; 
   }
+
+@keyframes beginFormA {
+    0% {background-color: #ffffff;
+        color: #000000;}
+
+    100%{background-color: #ffc51b80;
+         color: #ffffff;}
+}
