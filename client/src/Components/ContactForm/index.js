@@ -65,7 +65,7 @@ function ContactForm() {
     return (
         <div>
 
-            <form className={styles.contactForm} >
+            <form className={`${styles.contactForm} ${styles.red}`} >
                 {
                     currentQ === 0 ?
                         <p className={styles.formIntro}>If you'd like to talk, feel free to
@@ -88,6 +88,7 @@ function ContactForm() {
                                 onChange={e => setName(e.target.value)}
                                 name="nametInputBar"
                                 type="text"
+                                autoFocus
                                 // value={questions[currentQ].value}
                                 placeholder="Your Name Here"
                                 required />
@@ -109,6 +110,7 @@ function ContactForm() {
                                 onChange={e => setEmail(e.target.value)}
                                 name="emailtInputBar"
                                 type="text"
+                                autoFocus
                                 // value={questions[currentQ].value}
                                 placeholder="Your Email Here"
                                 required />
@@ -128,6 +130,7 @@ function ContactForm() {
                                 onChange={e => setSubject(e.target.value)}
                                 name="textInputBar"
                                 type="text"
+                                autoFocus
                                 placeholder="What is the subject of your inquiry?"
                                 required />
 
@@ -146,6 +149,7 @@ function ContactForm() {
                                 name="message"
                                 className={styles.qInputField}
                                 type="text"
+                                autoFocus
                                 placeholder="Please write your message here"
                                 required />
                             <div
