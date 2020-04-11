@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Navbar from '../../Components/Navbar/index.js';
-import Wrapper from '../../Components/Wrapper/index';
-import Carousel from '../../Components/Carousel/index';
-import ContactForm from '../../Components/ContactForm/index'
+import Navbar from '../../Components/Navbar/';
+import Wrapper from '../../Components/Wrapper/';
+import Carousel from '../../Components/Carousel/';
+import ContactForm from '../../Components/ContactForm/'
+import Footer from '../../Components/Footer'
 import styles from './style.module.css'
 
 
@@ -26,13 +27,15 @@ class Home extends Component {
                 <div    id="portfolioCarousel" >
                     <Carousel />
                 </div>
-                <div id="contactSection" style={{
-                      height: "600px",
-                      width: "100%"
-                }}>
+                <div id="contactSection" 
+                     style={{
+                    //   height: "250px",
+                    //   width: "100%"
+                                }}
+                      className={styles.red}>
                     <ContactForm />
                 </div>
-                
+                <Footer />
             </Wrapper>
 
         )
