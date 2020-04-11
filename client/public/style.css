@@ -81,7 +81,7 @@ p{
 	right: 270px;
 	height: 1px;
 	width: 1px;
-	animation: loadingAnimJ 6s both infinite 0s;
+	animation: loadingAnimJ 6s infinite  0s;
 }
 
 #k{
@@ -102,32 +102,68 @@ p{
 	0%{
         transform: translate3d(-300px, 0, 0);
     }
-    33%{
+    16.5%{
         transform: translate3d(0, 0, 0);
 	}
-	66%{
-		transform: rotateZ(-360deg);
+	24.5%{
+        transform: translate3d(0, 0, 0);
 	}
-	100%{
+	33%{
 		transform: translate3d(-400px, -300px, 0);
 	}
+	50%{
+		transform: translate3d(-300px, 0, 0)
+	}
+	66%{
+		transform: translate3d(0px, 0, 0)
+	}
+	74.5%{
+		transform: translate3d(0px, 0, 0)
+	}
+	82%{
+		transform: translate3d(380px, 300px, 0);
+	}
+	90%{
+		transform: translate3d(380px, -300px, 0);
+	}
+	95%{
+		transform: translate3d(-300px, -300px, 0);
+	}
+	100%{
+		transform: translate3d(-300px, 0, 0);
+	}
 }
-
 
 
 @keyframes loadingAnimJ{
 	0%{
         transform: translate3d(340px, 0px, 0);
     }
-    33%{
+    16.5%{
         transform: translate3d(0, 0, 0);
-
+	}
+	24.5%{
+        transform: translate3d(0, 0, 0);
+	}
+	33%{
+		transform: translate3d(380px, 300px, 0);
+	}
+	50%{
+		transform: translate3d(340px, 0px, 0)
 	}
 	66%{
-		transform: rotateY(360deg);
+		transform: translate3d(0px, 0px, 0);
+	}
+	74.5%{
+		transform: translate3d(0px, 0, 0)
+	}
+	82%{
+		transform: translate3d(-400px, -300px, 0)
+	}
+	95%{
+		transform: translate3d(340px, -300px, 0)
 	}
 	100%{
-		transform: translate3d(400px, 300px, 0);
+		transform: translate3d(340px, 0px, 0);
 	}
-	
 }

@@ -6,16 +6,16 @@ import DotCanvas from './Components/DotCanvas';
 
 function App() {
 
-  //  useEffect(() =>{
-  //    const loader = document.getElementById('loader');
-  //    if(loader){
-  //      loader.classList.add('hidden')
-  //    }
+   useEffect(() =>{
+     const loader = document.getElementById('loader');
+     if(loader){
+       loader.classList.add('hidden')
+     }
 
-  //    setTimeout(() =>{
-  //      loader.outerHTML = ''
-  //    }, 2000)
-  //  })
+     setTimeout(() =>{
+       loader.outerHTML = ''
+     }, 6000)
+   })
   return (
     
 
