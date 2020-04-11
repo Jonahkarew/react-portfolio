@@ -29,10 +29,10 @@ class Home extends Component {
                 </div>
                 <div id="contactSection" 
                      style={{
-                      height: "250px",
-                      width: "100%"
+                    //   height: "250px",
+                    //   width: "100%"
                                 }}
-                      className={styles.red}>
+                      className={styles.contactSection}>
                     <ContactForm />
                 </div>
                 <Footer />
