@@ -17,7 +17,7 @@ class Home extends Component {
                 <div id="bioAnchor" className={styles.bioAnchor}></div>
                 <h1 className={styles.firstName}>Jonah</h1>
                 <h2 className={styles.lastName}>Karew</h2>
-                <div className={styles.column}>
+                <div className={`${styles.column} ${styles.column1}`}>
                     <div className={styles.profileImageDiv} alt='Jonah Karew'></div>
                     <p className={styles.bio}>Goal-oriented Web Developer with strong commitment to collaboration and solutions-oriented problem-solving. Use various web design software to develop customer-focused websites and designs. Committed to high standards of web design, user experience, usability and speed for multiple types of end-users. Successful at maintaining customer satisfaction through effective customer support.</p>
                 </div>
@@ -29,8 +29,8 @@ class Home extends Component {
                 </div>
                 <div id="contactSection" 
                      style={{
-                    //   height: "250px",
-                    //   width: "100%"
+                      height: "250px",
+                      width: "100%"
                                 }}
                       className={styles.red}>
                     <ContactForm />

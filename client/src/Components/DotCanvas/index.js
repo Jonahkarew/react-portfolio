@@ -11,20 +11,20 @@ function DotCanvas() {
 
     const dots = [
         // big dots
-        { x: 100, y: 100, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '+', frames: 1.3, color: '#ffc51b80'},
-        { x: 120, y: 120, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '+', frames: 0.8, color: '#ffd14a80'},
-        { x: 40, y: 200,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: 0.3, color: '#4089be80'},
-        { x: 60, y: 240,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: 0.9, color: '#87bbdf80'},
-        { x: 250, y: 300, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '-', frames:   1, color: '#ff7b4a80'},
-        { x: 280, y: 315, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '-', frames: 1.5, color: '#d13A0280'},
-        { x: 150, y: 35,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: 0.5, color: '#4089be80'},
-        { x: 170, y: 65,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: 0.7, color: '#09528680'},
+        { x: 100, y: 100, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '+', frames: Math.random() + 0.2, color: '#ffc51b80'},
+        { x: 120, y: 120, radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: Math.random() + 0.2, color: '#ffd14a80'},
+        { x: 40, y: 200,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: Math.random() + 0.2, color: '#4089be80'},
+        { x: 60, y: 240,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: Math.random() + 0.2, color: '#87bbdf80'},
+        { x: 250, y: 300, radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '-', frames: Math.random() + 0.2, color: '#ff7b4a80'},
+        { x: 280, y: 315, radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '+', frames: Math.random() + 0.2, color: '#d13A0280'},
+        { x: 150, y: 35,  radius: Math.floor(Math.random() * 40) + 10, xMove: '+', yMove: '-', frames: Math.random() + 0.2, color: '#4089be80'},
+        { x: 170, y: 65,  radius: Math.floor(Math.random() * 40) + 10, xMove: '-', yMove: '-', frames: Math.random() + 0.2, color: '#09528680'},
 
         // itty bitty dots
-        { x: 250, y: 300, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '-', frames:   1, color: '#ff7b4a80'},
-        { x: 280, y: 315, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '-', frames: 1.5, color: '#d13A0280'},
-        { x: 150, y: 35,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '-', frames: 0.5, color: '#4089be80'},
-        { x: 170, y: 65,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '-', frames: 0.7, color: '#09528680'},
+        { x: 250, y: 300, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '+', frames: Math.random() + 0.2, color: '#ff7b4a80'},
+        { x: 280, y: 315, radius: Math.floor(Math.random() * 20) + 4, xMove: '+', yMove: '-', frames: Math.random() + 0.2, color: '#d13A0280'},
+        { x: 150, y: 35,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '+', frames: Math.random() + 0.2, color: '#4089be80'},
+        { x: 170, y: 65,  radius: Math.floor(Math.random() * 20) + 4, xMove: '-', yMove: '-', frames: Math.random() + 0.2, color: '#09528680'},
     ]
 
     useEffect(() => {

@@ -3,7 +3,7 @@ import styles from './style.module.css'
 function Footer() {
     return (
         <div className={styles.footer}>
-            thingy
+           <p className={styles.copyR}>&copy; 2020 Jonah Karew </p> 
         </div>
     )
 }
