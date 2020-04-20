@@ -28,14 +28,9 @@ class Home extends Component {
                     <Carousel />
                 </div>
                 <div id="contactSection" 
-                     style={{
-                    //   height: "250px",
-                    //   width: "100%"
-                                }}
                       className={styles.contactSection}>
                     <ContactForm />
                 </div>
-                <Footer />
             </Wrapper>
 
         )

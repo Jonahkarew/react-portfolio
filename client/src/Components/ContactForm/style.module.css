@@ -61,6 +61,7 @@
 .contactForm{
     display: block;
     margin: 2em;
+    height: 400px;
 }
 
 .formQ{
@@ -102,6 +103,7 @@
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     overflow: scroll;
+    resize: none;
 }
 
 .qInputField:focus{

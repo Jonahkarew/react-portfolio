@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home/Home';
 import DotCanvas from './Components/DotCanvas';
-
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
     <React.Fragment>
       <DotCanvas />
       <Home />
+      <Footer />
     </React.Fragment>
   );
 }
