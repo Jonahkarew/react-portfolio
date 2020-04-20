@@ -46,3 +46,36 @@
         -webkit-text-fill-color: #FFFFFF;
     }
 }
+
+@media only screen and (min-width: 600px){
+    .navContainer{
+        height: 70px;
+    }
+
+    .jk{
+        font-size: 70px;
+        display: block;
+        float: left;
+        margin: 24px 14px;
+      }
+
+      .button{
+        display: block;
+        float: right;
+        text-align: center;
+        width: 80px;
+        margin: 9px 6px;
+        padding: 6px;
+        color: #000000;
+        border: #000000 1px solid;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    @supports (-webkit-text-stroke: 1px black){
+        .jk{
+            -webkit-text-stroke: 3px black;
+            -webkit-text-fill-color: #FFFFFF;
+        }
+    }
+}

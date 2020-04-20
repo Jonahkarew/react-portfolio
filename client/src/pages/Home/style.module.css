@@ -57,3 +57,34 @@
   box-shadow: 0px 2px 5px 0px rgba(0,0,0, .7);
   display: block;
 }
+
+@media only screen and (min-width: 600px){
+  .firstName{
+    font-family: 'Cinzel', serif;
+    position: absolute;
+    font-size: 65px;
+    top: 95px;
+    left: 35px;
+  }
+  
+  .lastName{
+    font-family: 'Cinzel', serif;
+    position: absolute;
+    font-size: 70px;
+    top: 150px;
+    left: 130px;
+  }
+
+  .profileImageDiv{
+    background-image: url('./assets/profile.JPG');
+    width:300px; 
+    height:300px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin: 40px 0 0 auto;
+    border:1px solid #f2f2f2;
+    border-radius:50%;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0, .7);
+    display: block;
+  }
+}

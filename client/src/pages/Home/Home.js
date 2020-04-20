@@ -3,7 +3,6 @@ import Navbar from '../../Components/Navbar/';
 import Wrapper from '../../Components/Wrapper/';
 import Carousel from '../../Components/Carousel/';
 import ContactForm from '../../Components/ContactForm/'
-import Footer from '../../Components/Footer'
 import styles from './style.module.css'
 
 
