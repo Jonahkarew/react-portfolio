@@ -1,98 +1,106 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import './style.css'
- 
 
 
 
 
 
-function DemoCarousel () {
-    
-        return (
-            <Carousel
+
+function DemoCarousel() {
+    const [projects] = useState([
+        {
+            title: "ScrapeIt!",
+            hrefDeployed: "https://jonahkarew.github.io/ScrapeIt/",
+            hrefGithub: "https://github.com/Jonahkarew/ScrapeIt",
+            hrefReadMe: "https://github.com/Jonahkarew/ScrapeIt/blob/master/README.md",
+            thumbnail: require('./assets/scrapeit_re.PNG'),
+            thumbnailAlt: "reddit spotify scraping application",
+            description: 'flexitarian scenester forage keffiyeh deep v fan '
+        },
+        {
+            title: "Long Lost Friends",
+            hrefDeployed: "https://long-lost-friends.herokuapp.com/",
+            hrefGithub: "https://github.com/rishirsud/llf-react",
+            hrefReadMe: "https://github.com/rishirsud/llf-react/blob/master/README.md",
+            thumbnail: require("./assets/llfrere.png"),
+            thumbnailAlt: 'long lost friends react',
+            description: 'flexitarian scenester forage keffiyeh deep v fan '
+        },
+        {
+            title: "Pokemon Memory Game - React",
+            hrefDeployed: "https://pokemon-memory-gamejk.herokuapp.com/",
+            hrefGithub: "https://github.com/Jonahkarew/memory-game",
+            hrefReadMe: "https://github.com/Jonahkarew/memory-game/blob/master/README.md",
+            thumbnail: require("./assets/pkmnmemory.png"),
+            thumbnailAlt: "pokemon selector game",
+            description: 'flexitarian scenester forage keffiyeh deep v fan '
+        },
+        {
+            title: "Note Taker",
+            hrefDeployed: "https://jonah-karew-note-taker.herokuapp.com/",
+            hrefGithub: "https://github.com/Jonahkarew/note-taker",
+            hrefReadMe: "https://github.com/Jonahkarew/note-taker/blob/master/README.md",
+            thumbnail: require('./assets/notetakerrere.png'),
+            thumbnailAlt: "screenshot of a note taker application",
+            description: 'flexitarian scenester forage keffiyeh deep v fan '
+        },
+
+    ])
+
+    return (
+        <Carousel
             autoPlay
             interval={30000}
             infiniteLoop={true}
             useKeyboardArrows={true}
             stopOnHover={true}
             showIndicators={true}
-            width={'95%'}
-            >
-               
-                  <div>
-                    <img src={require('./assets/scrapeit_re.PNG')} alt='reddit spotify scraping application' />
-                    <p className='projectTitle'>ScrapeIt!</p>
-                   
-                    <hr className='titleSeperator'></hr>
-              
-                    <a className='projectLink' href='https://jonahkarew.github.io/ScrapeIt/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt' target='_blank' rel="noopener noreferrer">Github</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/ScrapeIt/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                    
-                    <div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
-                  
-                </div>
-                
-                <div id='frame1'>
-                    <img src={require("./assets/llfrere.png")} alt='long lost friends react'/>
-                    <div className='descriptionContainer'>
-                        <p className='projectTitle'>Long Lost Friends - React</p>
+            width={'50%'}
+
+            style={{display: 'flex',
+                    justifyContent: 'center'}}
+        >
+            {
+                projects.map((project) => 
+                    <div>
+                        <img src={project.thumbnail} alt={project.thumbnailAlt} />
+                        <p className='projectTitle'>{project.title}</p>
+
                         <hr className='titleSeperator'></hr>
-                        <a className='projectLink' href='https://long-lost-friends.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+
+                        <a className='projectLink' href={project.hrefDeployed} target='_blank' rel="noopener noreferrer">Deployed Link</a>
                         <br></br>
-                        <a className='projectLink' href='https://github.com/rishirsud/llf-react' target='_blank' rel="noopener noreferrer">Github</a>
+                        <a className='projectLink' href={project.hrefGithub} target='_blank' rel="noopener noreferrer">Github</a>
                         <br></br>
-                        <a className='projectLink' href='https://github.com/rishirsud/llf-react/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                        
-                        <div className='descriptor' hidden >flexitarian scenester forage keffiyeh deep v fanny pack Od
-                        d Future Helvetica 90's VHS Tonx keytar DIY raw denim Truffaut irony tote bag fap but
-                        cher Shoreditch chillwave trust fund try-hard PBR&B four loko cardigan post-ironic gas
-                        tropub bitters sriracha fingerstache selfies narwhal food truck squid tousled Portland Cosby
-                        sweater authentic kogi whatever seitan paleo mustache heirloom chia tofu vinyl selvage art party Tumblr artisan pop
-                        -up lomo vegan single-origin coffee flannel swag Schlitz brunch typewriter Intelligentsia street art Neutra hoodie lo-
-                        fi before they sold out hella Bushwick bicycle rights normcore aesthetic master cleanse twee Marfa PBR literally pour-ove
-                        r cred High Life pickled Blue Bottle cray wolf 3 wolf moon drinking vinegar leggings synth fixie ennui polaroid bespoke pork
-                        belly Godard asymmetrical photo booth meggings mixtape gluten-free Pitchfork kitsch small batch distillery locavore actually 
-                        next level banjo jean shorts American Apparel Brooklyn Etsy direct trade  you probably haven't heard of them Williamsburg cli
-                        che Carles organic ethical Echo Park farm-to-table wayfarers Kickstarter Austin stumptown Vice beard iPhone letterpress bl
-                        og McSweeney's plaid sustainable pug freegan mumblecore dreamcatcher quinoa retro YOLO yr semiotics kale chips viral 8-bit
-                        +1 salvia readymade hashtag biodiesel Pinterest fashion axe disrupt skateboard tattooed Wes Anderson Banksy Thundercats s
-                        low-carb roof party church-key sartorial gentrify crucifix XOXO messenger bag shabby chic banh mi cornhole umami put a bi
-                        rd on it occupy ugh meh craft beer chambray mlkshk
-                        </div>
-                       </div>
-                </div>
+                        <a className='projectLink' href={project.hrefReadMe} target='_blank' rel="noopener noreferrer">ReadMe</a>
+
+                        <div className='descriptor' hidden>{project.description} </div>
+
+                    </div>
+                )
+            }
+
+            {/* 
+                
+              
                 <div>
-                    <img src={require("./assets/pkmnmemory.png")} alt='pokemon selector game' />
-                    <p className='projectTitle'>Pokemon Memory Game - React</p>
+                    <img src={} alt='random' />
+                    <p className='projectTitle'></p>
                     <hr className='titleSeperator'></hr>
-                    <a className='projectLink' href='https://pokemon-memory-gamejk.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
+                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">Deployed Link</a>
                     <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game' target='_blank' rel="noopener noreferrer">Github</a>
+                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">Github</a>
                     <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/memory-game/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                    < div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
-                </div>
-                <div>
-                    <img src={require('./assets/notetakerrere.png')} alt='random' />
-                    <p className='projectTitle'>Note Taker</p>
-                    <hr className='titleSeperator'></hr>
-                    <a className='projectLink' href='https://jonah-karew-note-taker.herokuapp.com/' target='_blank' rel="noopener noreferrer">Deployed Link</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/note-taker' target='_blank' rel="noopener noreferrer">Github</a>
-                    <br></br>
-                    <a className='projectLink' href='https://github.com/Jonahkarew/note-taker/blob/master/README.md' target='_blank' rel="noopener noreferrer">ReadMe</a>
+                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">ReadMe</a>
                     
                     <div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
-                </div>
-            </Carousel>
-        );
-    
+                </div> */}
+        </Carousel>
+    );
+
 };
- 
+
 export default DemoCarousel;
 // ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
