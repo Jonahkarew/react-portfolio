@@ -265,18 +265,18 @@ p{
 
 
 	#k, #j {
-		top: 400px;
+		top: 200px;
 	} 
 
 	#k {
 		position: absolute;
-		top: 400px;
+		top: 200px;
 		left: 730px;
 	}
 
 	#j{
 		position: absolute;
-		top: 400px;
+		top: 200px;
 		right: 850px;
 	}
 

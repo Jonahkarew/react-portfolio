@@ -60,14 +60,15 @@
       }
 
       .button{
+          font-size: 35px;
         display: block;
         float: right;
         text-align: center;
-        width: 80px;
+        width: auto;
         margin: 9px 6px;
-        padding: 6px;
+        padding: 12px;
         color: #000000;
-        border: #000000 1px solid;
+        border: #000000 2px solid;
         border-radius: 20px;
         transition: 0.3s;
     }

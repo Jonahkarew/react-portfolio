@@ -65,7 +65,7 @@ function ContactForm() {
     return (
         <div>
 
-            <form className={`${styles.contactForm} ${styles.red}`} >
+            <form className={`${styles.contactForm}`} >
                 {
                     currentQ === 0 ?
                         <p className={styles.formIntro}>If you'd like to talk, feel free to
@@ -131,7 +131,7 @@ function ContactForm() {
                                 name="textInputBar"
                                 type="text"
                                 autoFocus
-                                placeholder="What is the subject of your inquiry?"
+                                placeholder="Subject of your inquiry?"
                                 required />
 
                             <div

@@ -8,8 +8,8 @@ import './style.css'
 
 
 
-class DemoCarousel extends Component {
-    render() {
+function DemoCarousel () {
+    
         return (
             <Carousel
             autoPlay
@@ -17,7 +17,7 @@ class DemoCarousel extends Component {
             infiniteLoop={true}
             useKeyboardArrows={true}
             stopOnHover={true}
-            showIndicators={false}
+            showIndicators={true}
             width={'95%'}
             >
                
@@ -91,7 +91,7 @@ class DemoCarousel extends Component {
                 </div>
             </Carousel>
         );
-    }
+    
 };
  
 export default DemoCarousel;

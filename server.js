@@ -10,12 +10,6 @@ const port = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
-// app.use(function(req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-//   });
-
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
@@ -26,7 +20,7 @@ app.use(cors());
 
 app.post('/api/v1', (req, res) => {
     var data = req.body;
-    // console.log(req)
+
     console.log(data);
 
     var smtpTransport = nodemailer.createTransport({
@@ -49,7 +43,6 @@ app.post('/api/v1', (req, res) => {
         <p>Email: ${data.email}</p>
         <p>Message: ${data.message}</p>
         `
-        // `${data[0]}`
     }
 
     smtpTransport.sendMail(mailOps, (err, res) => {

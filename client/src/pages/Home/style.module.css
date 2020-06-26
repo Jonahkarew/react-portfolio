@@ -63,7 +63,7 @@
     font-family: 'Cinzel', serif;
     position: absolute;
     font-size: 65px;
-    top: 95px;
+    top: 115px;
     left: 35px;
   }
   
@@ -71,7 +71,7 @@
     font-family: 'Cinzel', serif;
     position: absolute;
     font-size: 70px;
-    top: 150px;
+    top: 170px;
     left: 130px;
   }
 
@@ -86,5 +86,9 @@
     border-radius:50%;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0, .7);
     display: block;
+  }
+
+  .column1{
+    padding-top: 4rem;
   }
 }
