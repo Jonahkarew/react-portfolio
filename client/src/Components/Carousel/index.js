@@ -56,7 +56,8 @@ function DemoCarousel() {
             infiniteLoop={true}
             useKeyboardArrows={true}
             stopOnHover={true}
-            showIndicators={true}
+            // showIndicators={true}
+            showThumbs={false}
             width={'50%'}
 
             style={{display: 'flex',
@@ -81,22 +82,6 @@ function DemoCarousel() {
                     </div>
                 )
             }
-
-            {/* 
-                
-              
-                <div>
-                    <img src={} alt='random' />
-                    <p className='projectTitle'></p>
-                    <hr className='titleSeperator'></hr>
-                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">Deployed Link</a>
-                    <br></br>
-                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">Github</a>
-                    <br></br>
-                    <a className='projectLink' href='' target='_blank' rel="noopener noreferrer">ReadMe</a>
-                    
-                    <div className='descriptor' hidden>flexitarian scenester forage keffiyeh deep v fan </div>
-                </div> */}
         </Carousel>
     );
 
